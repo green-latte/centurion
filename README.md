@@ -36,7 +36,7 @@ Add this line at the end of your application.css
 
 You will need to add modernizr and centurion in your application.js:
 
-    //= modernizr
+    //= require modernizr
     //= require centurion
 
 ## Contributing
