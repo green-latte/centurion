@@ -1,3 +1,5 @@
 module Centurion
-  VERSION = "0.0.1"
+	module Framework
+	  VERSION = "0.0.1"
+	end
 end
