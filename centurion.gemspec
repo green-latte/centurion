@@ -1,23 +1,20 @@
-$:.push File.expand_path("../lib", __FILE__)
-
-# Maintain your gem's version:
+# -*- encoding: utf-8 -*-
+lib = File.expand_path("../lib", __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "centurion/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "centurion"
   s.version     = Centurion::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Centurion."
-  s.description = "TODO: Description of Centurion."
+  s.authors     = ["Kousuke Takeuchi"]
+  s.email       = ["u651601f@gmail.com"]
+  s.homepage    = "http://rubygems.org/gem/centurion"
+  s.summary     = %q{Centurion Framework for Rails}
+  s.description = %q{Centurion Framework for Rails}
   s.license     = "MIT"
+  s.files = `git ls-files`.split($/)
+  s.require_paths = ["lib"]
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
-  s.test_files = Dir["test/**/*"]
-
-  s.add_dependency "rails", "~> 4.1.4"
-
-  s.add_development_dependency "sqlite3"
+  s.add_dependency "modernizr-rails"
 end
