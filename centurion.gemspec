@@ -6,7 +6,7 @@ require "centurion/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "centurion"
-  s.version     = Centurion::VERSION
+  s.version     = Centurion::Framework::VERSION
   s.authors     = ["Kousuke Takeuchi"]
   s.email       = ["u651601f@gmail.com"]
   s.homepage    = "http://rubygems.org/gem/centurion"
