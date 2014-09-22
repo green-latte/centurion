@@ -18,6 +18,14 @@ Or install it yourself as:
 
 ## Usage
 
+You will need to add also the <code>modernizr-rails</code>  gem to your gemfile:
+
+    # Gemfile
+    
+    gem "modernizr-rails"
+    gem "gumby"
+Then run <code>bundle install</code>.
+
 #### CSS
 
 Add this line at the end of your application.css
@@ -26,15 +34,10 @@ Add this line at the end of your application.css
 
 #### Javascript
 
-You will need to add jquery and modernizr and global centurion object in your application.js:
+You will need to add modernizr and centurion in your application.js:
 
-    //= require jquery
-    //= require jquery_ujs
+    //= modernizr
     //= require centurion
-
-After this line, you can add the centurion JS plugins; you have available the following plugins:
-
-      //= require ui/gumby
 
 ## Contributing
 
